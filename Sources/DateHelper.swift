@@ -189,7 +189,7 @@ public extension Date {
                 return String(format: string, d)
             }
         }
-        if d < 28 {
+        if d < 365 {
             if isPast {
                 if compare(.isLastWeek) {
                     return strings?[.oneWeekPast] ?? NSLocalizedString("last week", comment: "Date format")
